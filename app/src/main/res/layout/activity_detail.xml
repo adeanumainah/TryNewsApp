@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.detail.DetailActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_20dp"
+            android:layout_marginEnd="@dimen/_191dp"
+            android:layout_marginRight="@dimen/_191dp"
+            app:cardCornerRadius="@dimen/_8dp"
+            app:cardElevation="@dimen/_8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="@dimen/_10dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_200dp"
+                android:id="@+id/img_detail"
+                tools:src="@drawable/ic_launcher_foreground"/>
+
+            <TextView
+                android:id="@+id/tv_name_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/img_detail"
+                tools:text="judul berita"
+                android:textSize="@dimen/_18sp"
+                android:textStyle="bold"
+                android:textColor="?android:attr/textColorPrimary"
+                android:layout_marginTop="@dimen/_10dp"/>
+
+            <TextView
+                android:id="@+id/tv_desc_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_name_detail"
+                tools:text="desc berita"
+                android:textSize="@dimen/_15sp"
+                android:textColor="?android:attr/textColorPrimary"
+                android:layout_marginTop="@dimen/_5dp"/>
+
+    </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
